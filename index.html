@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>首頁</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+
+  <body>
+    <section class="banner">
+      <header>
+          <a href="index.html" class="logo"><img style="width: 300px;" src="assets/img/yu-gi-oh logo.png"></a>
+      </header>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="assets/img/index/worldchalice.jfif" />
+            <div class="text">星杯牌組</div>
+            <div class="details">
+              <a href="worldchalice.html"><span>Check It</span></a>
+          </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/img/index/mekkknight.jfif" />
+            <div class="text">機界騎士牌組</div>
+            <div class="details">
+              <a href="mekkknight.html"><span>Check It</span></a>
+          </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/img/index/krawler.jfif" />
+            <div class="text">機怪蟲牌組</div>
+            <div class="details">
+              <a href="krawler.html"><span>Check It</span></a>
+          </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/img/index/knightmare.jfif" />
+            <div class="text">夢幻牌組</div>
+            <div class="details">
+              <a href="knightmare.html"><span>Check It</span></a>
+          </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/img/index/story.jfif" />
+            <div class="text">劇情故事</div>
+            <div class="details">
+              <a href="story.html"><span>Check It</span></a>
+          </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/img/index/orcust.jfif" />
+            <div class="text">自鳴天琴牌組</div>
+            <div class="details">
+              <a href="orcust.html"><span>Check It</span></a>
+          </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/img/index/crusadia.jfif" />
+            <div class="text">聖像騎士牌組</div>
+            <div class="details">
+              <a href="crusadia.html"><span>Check It</span></a>
+          </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/img/index/guardragon.jfif" />
+            <div class="text">守護龍牌組</div>
+            <div class="details">
+              <a href="guardragon.html"><span>Check It</span></a>
+          </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/img/index/worldlegacy.jfif" />
+            <div class="text">星遺物牌組</div>
+            <div class="details">
+              <a href="worldlegacy.html"><span>Check It</span></a>
+          </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
+  </body>
+</html>
